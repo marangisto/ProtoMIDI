@@ -139,16 +139,9 @@ static void show_midi(midi_message_t m, char ch, char p0, char p1)
 static void sr_write(uint8_t x)
 {
     sr_cs::clear();
-    for (int i = 7; i >= 0; --i)
-    {
-        sr_tx::write(x & (1 << i));
-        sys_tick::delay_us(1);
-        sr_ck::set();
-        sys_tick::delay_us(1);
-        sr_ck::clear();
-    }
+    sr::write(x);
+    while (!sr::tx_complete());
     sr_cs::set();
-    sr_tx::clear();
 }
 
 int main()
@@ -162,9 +155,7 @@ int main()
 
     printf<serial>("MIDI-in Demo!\n");
 
-    //sr::setup_sync_master();
-    sr_ck::setup();
-    sr_tx::setup();
+    sr::setup_sync_master<4000000>();
     sr_cs::setup();
     sr_cs::set();
 
