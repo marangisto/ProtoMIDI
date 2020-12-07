@@ -2,7 +2,7 @@
 #include <textio.h>
 #include <usart.h>
 
-static const pin_t          LED = PB8;
+static const pin_t          LED = PA5;
 static const pin_t          BTN = PC13;
 static const pin_t          PROBE = PA8;
 
@@ -20,15 +20,16 @@ static constexpr int MIDI_USART = 1;
 static constexpr interrupt_t MIDI_ISR = interrupt::USART1;
 static constexpr pin_t MIDI_RX = PA10;
 
-static constexpr int SREG_USART = 4;
+static constexpr int SR_USART = 4;
 static constexpr pin_t SR_CK = PA15;
 static constexpr pin_t SR_TX = PA0;
-static constexpr pin_t SR_CS = PB4;
+static constexpr pin_t SR_CS = PD5;
 
 using serial = usart_t<SERIAL_USART, SERIAL_TX, SERIAL_RX>;
 using midi = usart_t<MIDI_USART, NO_PIN, MIDI_RX>;
 using led = output_t<LED>;
 
+using sr = usart_t<SR_USART, SR_TX, NO_PIN, SR_CK>;
 using sr_ck = output_t<SR_CK>;
 using sr_tx = output_t<SR_TX>;
 using sr_cs = output_t<SR_CS>;
@@ -161,6 +162,7 @@ int main()
 
     printf<serial>("MIDI-in Demo!\n");
 
+    //sr::setup_sync_master();
     sr_ck::setup();
     sr_tx::setup();
     sr_cs::setup();
