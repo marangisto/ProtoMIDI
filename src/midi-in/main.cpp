@@ -28,6 +28,7 @@ static constexpr pin_t SR_CS = PD5;
 using serial = usart_t<SERIAL_USART, SERIAL_TX, SERIAL_RX>;
 using midi = usart_t<MIDI_USART, NO_PIN, MIDI_RX>;
 using led = output_t<LED>;
+using probe = output_t<PROBE>;
 
 using sr = usart_t<SR_USART, SR_TX, NO_PIN, SR_CK>;
 using sr_ck = output_t<SR_CK>;
@@ -138,8 +139,10 @@ static void show_midi(midi_message_t m, char ch, char p0, char p1)
 
 static void sr_write(uint8_t x)
 {
+    probe::clear();
     sr_cs::clear();
     sr::write(x);
+    probe::set();
     while (!sr::tx_complete());
     sr_cs::set();
 }
@@ -147,6 +150,7 @@ static void sr_write(uint8_t x)
 int main()
 {
     led::setup();
+    probe::setup();
     serial::setup<230400>();
     interrupt::set<SERIAL_ISR>();
     midi::setup<31250>();
@@ -158,6 +162,7 @@ int main()
     sr::setup_sync_master<4000000>();
     sr_cs::setup();
     sr_cs::set();
+    probe::set();
 
     for (;;)
     {
