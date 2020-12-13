@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 12
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -13,17 +13,15 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 12650 7200 2    50   Input ~ 0
-MIDI-IN
 $Sheet
-S 11900 7050 650  300 
+S 11650 8300 650  300 
 U 5FE8C8A9
 F0 "MIDI-In" 50
 F1 "MIDI-In.sch" 50
-F2 "MIDI-IN" I R 12550 7200 50 
+F2 "MIDI-IN" I R 12300 8450 50 
 $EndSheet
 Wire Wire Line
-	12650 7200 12550 7200
+	12400 8450 12300 8450
 $Comp
 L power:GND #PWR02
 U 1 1 5FEC3D68
@@ -170,7 +168,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 9250 3200 9500
 Connection ~ 3200 9500
-Text GLabel 3650 3300 0    50   Input ~ 0
+Text GLabel 3750 3300 0    50   Input ~ 0
 RESET
 Wire Wire Line
 	2850 2800 3750 2800
@@ -180,210 +178,56 @@ Wire Wire Line
 	3200 2700 3750 2700
 Wire Wire Line
 	3200 2900 3750 2900
-Text GLabel 4450 4300 3    50   Input ~ 0
-DAC1_CH1
-Text GLabel 4550 4300 3    50   Input ~ 0
-DAC1_CH2
-Wire Wire Line
-	4450 4300 4450 4200
-Wire Wire Line
-	4550 4300 4550 4200
-Wire Wire Line
-	3650 3300 3750 3300
-Text GLabel 4850 1700 1    50   Input ~ 0
-SPI1_SCK
-Text GLabel 4750 1700 1    50   Input ~ 0
-SPI1_MISO
-Text GLabel 4650 1700 1    50   Input ~ 0
-SPI1_MOSI
-Wire Wire Line
-	4650 1800 4650 1700
-Wire Wire Line
-	4750 1700 4750 1800
-Wire Wire Line
-	4850 1800 4850 1700
-Text GLabel 4350 1700 1    50   Input ~ 0
-SPI2_SCK
-Text GLabel 4450 1700 1    50   Input ~ 0
-SPI2_MOSI
-Text GLabel 4550 1700 1    50   Input ~ 0
-SPI2_MISO
-Wire Wire Line
-	4550 1700 4550 1800
-Wire Wire Line
-	4450 1700 4450 1800
-Wire Wire Line
-	4350 1700 4350 1800
-Text GLabel 4250 1700 1    50   Input ~ 0
-USART3_RX
-Wire Wire Line
-	4250 1700 4250 1800
-Text GLabel 4150 1700 1    50   Input ~ 0
-USART3_TX
-Wire Wire Line
-	4150 1700 4150 1800
-$Sheet
-S 10550 950  500  300 
-U 5FF017F6
-F0 "PushLed" 50
-F1 "PushLed.sch" 50
-F2 "LED" I L 10550 1050 50 
-F3 "SW" I L 10550 1150 50 
-$EndSheet
-Text GLabel 10450 1150 0    50   Input ~ 0
-SW1
-Text GLabel 10450 1050 0    50   Input ~ 0
+Text GLabel 9600 1200 0    50   Input ~ 0
 LED1
-Wire Wire Line
-	10450 1150 10550 1150
-Wire Wire Line
-	10450 1050 10550 1050
-$Sheet
-S 10550 1450 500  300 
-U 5FF0415B
-F0 "sheet5FF0415B" 50
-F1 "PushLed.sch" 50
-F2 "LED" I L 10550 1550 50 
-F3 "SW" I L 10550 1650 50 
-$EndSheet
-Text GLabel 10450 1650 0    50   Input ~ 0
-SW2
-Text GLabel 10450 1550 0    50   Input ~ 0
+Text GLabel 9600 2350 0    50   Input ~ 0
 LED2
-Wire Wire Line
-	10450 1650 10550 1650
-Wire Wire Line
-	10450 1550 10550 1550
-$Sheet
-S 10550 1950 500  300 
-U 5FF04F7A
-F0 "sheet5FF04F7A" 50
-F1 "PushLed.sch" 50
-F2 "LED" I L 10550 2050 50 
-F3 "SW" I L 10550 2150 50 
-$EndSheet
-Text GLabel 10450 2150 0    50   Input ~ 0
-SW3
-Text GLabel 10450 2050 0    50   Input ~ 0
+Text GLabel 9600 3500 0    50   Input ~ 0
 LED3
-Wire Wire Line
-	10450 2150 10550 2150
-Wire Wire Line
-	10450 2050 10550 2050
-$Sheet
-S 10550 2450 500  300 
-U 5FF050B6
-F0 "sheet5FF050B6" 50
-F1 "PushLed.sch" 50
-F2 "LED" I L 10550 2550 50 
-F3 "SW" I L 10550 2650 50 
-$EndSheet
-Text GLabel 10450 2650 0    50   Input ~ 0
-SW4
-Text GLabel 10450 2550 0    50   Input ~ 0
+Text GLabel 9600 4650 0    50   Input ~ 0
 LED4
-Wire Wire Line
-	10450 2650 10550 2650
-Wire Wire Line
-	10450 2550 10550 2550
-$Sheet
-S 10550 2950 500  300 
-U 5FF06A1B
-F0 "sheet5FF06A1B" 50
-F1 "PushLed.sch" 50
-F2 "LED" I L 10550 3050 50 
-F3 "SW" I L 10550 3150 50 
-$EndSheet
-Text GLabel 10450 3150 0    50   Input ~ 0
-SW5
-Text GLabel 10450 3050 0    50   Input ~ 0
+Text GLabel 10600 1200 0    50   Input ~ 0
 LED5
-Wire Wire Line
-	10450 3150 10550 3150
-Wire Wire Line
-	10450 3050 10550 3050
-$Sheet
-S 10550 3450 500  300 
-U 5FF06B57
-F0 "sheet5FF06B57" 50
-F1 "PushLed.sch" 50
-F2 "LED" I L 10550 3550 50 
-F3 "SW" I L 10550 3650 50 
-$EndSheet
-Text GLabel 10450 3650 0    50   Input ~ 0
-SW6
-Text GLabel 10450 3550 0    50   Input ~ 0
+Text GLabel 10600 2350 0    50   Input ~ 0
 LED6
-Wire Wire Line
-	10450 3650 10550 3650
-Wire Wire Line
-	10450 3550 10550 3550
-$Sheet
-S 10550 3950 500  300 
-U 5FF06B5F
-F0 "sheet5FF06B5F" 50
-F1 "PushLed.sch" 50
-F2 "LED" I L 10550 4050 50 
-F3 "SW" I L 10550 4150 50 
-$EndSheet
-Text GLabel 10450 4150 0    50   Input ~ 0
-SW7
-Text GLabel 10450 4050 0    50   Input ~ 0
+Text GLabel 10600 3500 0    50   Input ~ 0
 LED7
-Wire Wire Line
-	10450 4150 10550 4150
-Wire Wire Line
-	10450 4050 10550 4050
-$Sheet
-S 10550 4450 500  300 
-U 5FF06B67
-F0 "sheet5FF06B67" 50
-F1 "PushLed.sch" 50
-F2 "LED" I L 10550 4550 50 
-F3 "SW" I L 10550 4650 50 
-$EndSheet
-Text GLabel 10450 4650 0    50   Input ~ 0
-SW8
-Text GLabel 10450 4550 0    50   Input ~ 0
+Text GLabel 10600 4650 0    50   Input ~ 0
 LED8
-Wire Wire Line
-	10450 4650 10550 4650
-Wire Wire Line
-	10450 4550 10550 4550
 $Comp
 L power:GND #PWR?
 U 1 1 5FFA51DD
-P 14450 9350
+P 12550 7300
 AR Path="/5FB86C29/5FFA51DD" Ref="#PWR?"  Part="1" 
 AR Path="/5FFA51DD" Ref="#PWR048"  Part="1" 
 AR Path="/5FF0E759/5FFA51DD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR048" H 14450 9100 50  0001 C CNN
-F 1 "GND" H 14455 9177 50  0000 C CNN
-F 2 "" H 14450 9350 50  0001 C CNN
-F 3 "" H 14450 9350 50  0001 C CNN
-	1    14450 9350
+F 0 "#PWR048" H 12550 7050 50  0001 C CNN
+F 1 "GND" H 12555 7127 50  0000 C CNN
+F 2 "" H 12550 7300 50  0001 C CNN
+F 3 "" H 12550 7300 50  0001 C CNN
+	1    12550 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14450 9350 14450 9300
+	12550 7300 12550 7250
 $Comp
 L power:GND #PWR?
 U 1 1 5FFA51E4
-P 13800 9100
+P 11900 7300
 AR Path="/5FB86C29/5FFA51E4" Ref="#PWR?"  Part="1" 
 AR Path="/5FFA51E4" Ref="#PWR038"  Part="1" 
 AR Path="/5FF0E759/5FFA51E4" Ref="#PWR?"  Part="1" 
-F 0 "#PWR038" H 13800 8850 50  0001 C CNN
-F 1 "GND" H 13805 8927 50  0000 C CNN
-F 2 "" H 13800 9100 50  0001 C CNN
-F 3 "" H 13800 9100 50  0001 C CNN
-	1    13800 9100
+F 0 "#PWR038" H 11900 7050 50  0001 C CNN
+F 1 "GND" H 11905 7127 50  0000 C CNN
+F 2 "" H 11900 7300 50  0001 C CNN
+F 3 "" H 11900 7300 50  0001 C CNN
+	1    11900 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13800 9100 13800 9000
+	11900 7300 11900 6950
 Wire Wire Line
-	13800 9000 13950 9000
+	11900 6950 12050 6950
 $Comp
 L Device:R R?
 U 1 1 5FFA51EC
@@ -402,19 +246,19 @@ NoConn ~ 12500 1050
 $Comp
 L power:+5V #PWR?
 U 1 1 5FFA51F3
-P 14450 7500
+P 12550 5450
 AR Path="/5FB86C29/5FFA51F3" Ref="#PWR?"  Part="1" 
 AR Path="/5FFA51F3" Ref="#PWR047"  Part="1" 
 AR Path="/5FF0E759/5FFA51F3" Ref="#PWR?"  Part="1" 
-F 0 "#PWR047" H 14450 7350 50  0001 C CNN
-F 1 "+5V" H 14465 7673 50  0000 C CNN
-F 2 "" H 14450 7500 50  0001 C CNN
-F 3 "" H 14450 7500 50  0001 C CNN
-	1    14450 7500
+F 0 "#PWR047" H 12550 5300 50  0001 C CNN
+F 1 "+5V" H 12565 5623 50  0000 C CNN
+F 2 "" H 12550 5450 50  0001 C CNN
+F 3 "" H 12550 5450 50  0001 C CNN
+	1    12550 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14450 7500 14450 7700
+	12550 5450 12550 5650
 Wire Wire Line
 	12300 1150 12500 1150
 $Comp
@@ -742,75 +586,27 @@ Wire Wire Line
 	12400 4800 12400 4750
 Wire Wire Line
 	12400 4750 12500 4750
-Text GLabel 14950 8000 2    50   Input ~ 0
+Text GLabel 13050 5950 2    50   Input ~ 0
 TRIG0
-Text GLabel 14950 8100 2    50   Input ~ 0
+Text GLabel 13050 6050 2    50   Input ~ 0
 TRIG1
-Text GLabel 14950 8200 2    50   Input ~ 0
+Text GLabel 13050 6150 2    50   Input ~ 0
 TRIG2
-Text GLabel 14950 8300 2    50   Input ~ 0
+Text GLabel 13050 6250 2    50   Input ~ 0
 TRIG3
-Text GLabel 14950 8400 2    50   Input ~ 0
+Text GLabel 13050 6350 2    50   Input ~ 0
 TRIG4
-Text GLabel 14950 8500 2    50   Input ~ 0
+Text GLabel 13050 6450 2    50   Input ~ 0
 TRIG5
-Text GLabel 14950 8600 2    50   Input ~ 0
+Text GLabel 13050 6550 2    50   Input ~ 0
 TRIG6
-Text GLabel 14950 8700 2    50   Input ~ 0
+Text GLabel 13050 6650 2    50   Input ~ 0
 TRIG7
-$Comp
-L Connector:Conn_01x09_Male J?
-U 1 1 5FFA52BB
-P 13500 8400
-AR Path="/5FF0E759/5FFA52BB" Ref="J?"  Part="1" 
-AR Path="/5FFA52BB" Ref="J11"  Part="1" 
-F 0 "J11" H 13472 8332 50  0000 R CNN
-F 1 "Conn_01x09_Male" H 13472 8423 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 13500 8400 50  0001 C CNN
-F 3 "~" H 13500 8400 50  0001 C CNN
-	1    13500 8400
-	1    0    0    1   
-$EndComp
-$Comp
-L 74xx:74HCT244 U?
-U 1 1 5FFA52C1
-P 14450 8500
-AR Path="/5FB86C29/5FFA52C1" Ref="U?"  Part="1" 
-AR Path="/5FFA52C1" Ref="U5"  Part="1" 
-AR Path="/5FF0E759/5FFA52C1" Ref="U?"  Part="1" 
-F 0 "U5" H 14450 9481 50  0000 C CNN
-F 1 "74AHCT244" H 14450 9390 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 14450 8500 50  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/1846072.pdf?_ga=2.45164448.56267943.1558354548-1872083180.1540475894" H 14450 8500 50  0001 C CNN
-	1    14450 8500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	13950 8900 13800 8900
+	12050 6850 11900 6850
 Wire Wire Line
-	13800 8900 13800 9000
-Connection ~ 13800 9000
-Wire Wire Line
-	13700 8800 13800 8800
-Wire Wire Line
-	13800 8800 13800 8900
-Connection ~ 13800 8900
-Wire Wire Line
-	13700 8700 13950 8700
-Wire Wire Line
-	13700 8600 13950 8600
-Wire Wire Line
-	13950 8500 13700 8500
-Wire Wire Line
-	13700 8400 13950 8400
-Wire Wire Line
-	13950 8300 13700 8300
-Wire Wire Line
-	13700 8200 13950 8200
-Wire Wire Line
-	13950 8100 13700 8100
-Wire Wire Line
-	13700 8000 13950 8000
+	11900 6850 11900 6950
+Connection ~ 11900 6950
 $Comp
 L Device:C C?
 U 1 1 5FFA52DD
@@ -1193,10 +989,6 @@ Wire Wire Line
 	7600 8200 8050 8200
 Wire Wire Line
 	7600 8400 7750 8400
-Text GLabel 7600 8400 0    50   Input ~ 0
-ENC_CH1
-Text GLabel 7600 8200 0    50   Input ~ 0
-ENC_CH2
 Text GLabel 9200 8200 2    50   Input ~ 0
 ENC_SW
 Wire Wire Line
@@ -1810,7 +1602,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 3100 3750 3100
 $Sheet
-S 11900 7650 650  250 
+S 11650 8900 650  250 
 U 61500A32
 F0 "Power" 50
 F1 "Power.sch" 50
@@ -1827,10 +1619,22 @@ F 3 "" H 3200 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 11950 5750 500  900 
+S 14450 5900 550  900 
 U 615CD11F
 F0 "ADC80508" 50
 F1 "ADC80508.sch" 50
+F2 "CV1" I R 15000 6700 50 
+F3 "CV2" I R 15000 6600 50 
+F4 "CV3" I R 15000 6500 50 
+F5 "CV4" I R 15000 6400 50 
+F6 "CV5" I R 15000 6300 50 
+F7 "CV6" I R 15000 6200 50 
+F8 "CV7" I R 15000 6100 50 
+F9 "CV8" I R 15000 6000 50 
+F10 "SCLK" I L 14450 6500 50 
+F11 "SDI" I L 14450 6400 50 
+F12 "SDO" I L 14450 6300 50 
+F13 "CS" I L 14450 6200 50 
 $EndSheet
 NoConn ~ 14500 1050
 $Comp
@@ -2128,15 +1932,1700 @@ Wire Wire Line
 	14250 4650 14500 4650
 Wire Wire Line
 	14250 2150 14500 2150
+Text GLabel 15100 6700 2    50   Input ~ 0
+CV8
+Text GLabel 15100 6600 2    50   Input ~ 0
+CV7
+Text GLabel 15100 6500 2    50   Input ~ 0
+CV6
+Text GLabel 15100 6400 2    50   Input ~ 0
+CV5
+Text GLabel 15100 6300 2    50   Input ~ 0
+CV4
+Text GLabel 15100 6200 2    50   Input ~ 0
+CV3
+Text GLabel 15100 6100 2    50   Input ~ 0
+CV2
+Text GLabel 15100 6000 2    50   Input ~ 0
+CV1
+Wire Wire Line
+	15000 6000 15100 6000
+Wire Wire Line
+	15000 6100 15100 6100
+Wire Wire Line
+	15000 6200 15100 6200
+Wire Wire Line
+	15000 6300 15100 6300
+Wire Wire Line
+	15000 6400 15100 6400
+Wire Wire Line
+	15000 6500 15100 6500
+Wire Wire Line
+	15000 6600 15100 6600
+Wire Wire Line
+	15000 6700 15100 6700
 $Comp
-L STM32G071RBTx:STM32G071RBTx U03
-U 1 1 61A2F0BA
-P 4950 3000
-F 0 "U03" H 4900 3100 50  0000 L CNN
-F 1 "STM32G071RBTx" H 4650 2950 50  0000 L CNN
-F 2 "LQFP64" H 4950 3200 50  0001 C CNN
-F 3 "" H 4950 3300 50  0001 C CNN
-	1    4950 3000
+L 74xx:74HCT541 U?
+U 1 1 61B194E0
+P 12550 6450
+F 0 "U?" H 12550 7431 50  0000 C CNN
+F 1 "74HCT541" H 12550 7340 50  0000 C CNN
+F 2 "" H 12550 6450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HCT541" H 12550 6450 50  0001 C CNN
+	1    12550 6450
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61B4293F
+P 9900 1700
+AR Path="/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DA90748/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61B4293F" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61B4293F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9900 1450 50  0001 C CNN
+F 1 "GND" H 9905 1527 50  0000 C CNN
+F 2 "" H 9900 1700 50  0001 C CNN
+F 3 "" H 9900 1700 50  0001 C CNN
+	1    9900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B4294B
+P 9900 1550
+AR Path="/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DA90748/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DAF110B/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DB16B82/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DB16B86/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB0/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB4/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB8/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DB3CABC/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DB87BB5/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DB87BB9/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DB87BBD/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DE2B991/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5E016F8F/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5E023019/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5DB13571/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5FF017F6/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5FF0415B/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5FF04F7A/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5FF050B6/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5FF06A1B/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5FF06B57/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5FF06B5F/61B4294B" Ref="R?"  Part="1" 
+AR Path="/5FF06B67/61B4294B" Ref="R?"  Part="1" 
+F 0 "R?" V 9693 1550 50  0000 C CNN
+F 1 "330" V 9784 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9830 1550 50  0001 C CNN
+F 3 "~" H 9900 1550 50  0001 C CNN
+	1    9900 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 61B42958
+P 9800 1200
+AR Path="/5C756F9B/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5C763CB7/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5C7644B3/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5C7644B9/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5C188821/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5C192077/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5C19208D/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5C24C2D4/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5D78C3C7/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5D7C6377/61B42958" Ref="Q?"  Part="1" 
+AR Path="/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DA90748/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DAF110B/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DB16B82/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DB16B86/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB0/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB4/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB8/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DB3CABC/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB5/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB9/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DB87BBD/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DE2B991/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5E016F8F/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5E023019/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5DB13571/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5FF017F6/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5FF0415B/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5FF04F7A/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5FF050B6/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5FF06A1B/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5FF06B57/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5FF06B5F/61B42958" Ref="Q?"  Part="1" 
+AR Path="/5FF06B67/61B42958" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9991 1246 50  0000 L CNN
+F 1 "BC847" H 9991 1155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10000 1125 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 9800 1200 50  0001 L CNN
+	1    9800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61B42964
+P 9900 1000
+AR Path="/5DA90748/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61B42964" Ref="#PWR?"  Part="1" 
+AR Path="/61B42964" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9900 850 50  0001 C CNN
+F 1 "+12V" H 9915 1173 50  0000 C CNN
+F 2 "" H 9900 1000 50  0001 C CNN
+F 3 "" H 9900 1000 50  0001 C CNN
+	1    9900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BB369E
+P 10900 1700
+AR Path="/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DA90748/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BB369E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BB369E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10900 1450 50  0001 C CNN
+F 1 "GND" H 10905 1527 50  0000 C CNN
+F 2 "" H 10900 1700 50  0001 C CNN
+F 3 "" H 10900 1700 50  0001 C CNN
+	1    10900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61BB3EE2
+P 10900 1550
+AR Path="/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DA90748/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DAF110B/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DB16B82/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DB16B86/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB0/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB4/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB8/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DB3CABC/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DB87BB5/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DB87BB9/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DB87BBD/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DE2B991/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5E016F8F/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5E023019/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5DB13571/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5FF017F6/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5FF0415B/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5FF04F7A/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5FF050B6/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5FF06A1B/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5FF06B57/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5FF06B5F/61BB3EE2" Ref="R?"  Part="1" 
+AR Path="/5FF06B67/61BB3EE2" Ref="R?"  Part="1" 
+F 0 "R?" V 10693 1550 50  0000 C CNN
+F 1 "330" V 10784 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10830 1550 50  0001 C CNN
+F 3 "~" H 10900 1550 50  0001 C CNN
+	1    10900 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 61BB3EEC
+P 10800 1200
+AR Path="/5C756F9B/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5C763CB7/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5C7644B3/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5C7644B9/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5C188821/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5C192077/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5C19208D/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5C24C2D4/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5D78C3C7/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5D7C6377/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DA90748/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DAF110B/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DB16B82/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DB16B86/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB0/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB4/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB8/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DB3CABC/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB5/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB9/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DB87BBD/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DE2B991/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5E016F8F/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5E023019/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5DB13571/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5FF017F6/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5FF0415B/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5FF04F7A/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5FF050B6/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5FF06A1B/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5FF06B57/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5FF06B5F/61BB3EEC" Ref="Q?"  Part="1" 
+AR Path="/5FF06B67/61BB3EEC" Ref="Q?"  Part="1" 
+F 0 "Q?" H 10991 1246 50  0000 L CNN
+F 1 "BC847" H 10991 1155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11000 1125 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 10800 1200 50  0001 L CNN
+	1    10800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61BB3EF6
+P 10900 1000
+AR Path="/5DA90748/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BB3EF6" Ref="#PWR?"  Part="1" 
+AR Path="/61BB3EF6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10900 850 50  0001 C CNN
+F 1 "+12V" H 10915 1173 50  0000 C CNN
+F 2 "" H 10900 1000 50  0001 C CNN
+F 3 "" H 10900 1000 50  0001 C CNN
+	1    10900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BC6E81
+P 9900 2850
+AR Path="/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DA90748/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BC6E81" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BC6E81" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9900 2600 50  0001 C CNN
+F 1 "GND" H 9905 2677 50  0000 C CNN
+F 2 "" H 9900 2850 50  0001 C CNN
+F 3 "" H 9900 2850 50  0001 C CNN
+	1    9900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61BC771D
+P 9900 2700
+AR Path="/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DA90748/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DAF110B/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DB16B82/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DB16B86/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB0/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB4/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB8/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DB3CABC/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DB87BB5/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DB87BB9/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DB87BBD/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DE2B991/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5E016F8F/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5E023019/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5DB13571/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5FF017F6/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5FF0415B/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5FF04F7A/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5FF050B6/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5FF06A1B/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5FF06B57/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5FF06B5F/61BC771D" Ref="R?"  Part="1" 
+AR Path="/5FF06B67/61BC771D" Ref="R?"  Part="1" 
+F 0 "R?" V 9693 2700 50  0000 C CNN
+F 1 "330" V 9784 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9830 2700 50  0001 C CNN
+F 3 "~" H 9900 2700 50  0001 C CNN
+	1    9900 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 61BC7727
+P 9800 2350
+AR Path="/5C756F9B/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5C763CB7/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5C7644B3/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5C7644B9/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5C188821/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5C192077/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5C19208D/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5C24C2D4/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5D78C3C7/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5D7C6377/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DA90748/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DAF110B/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DB16B82/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DB16B86/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB0/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB4/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB8/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DB3CABC/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB5/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB9/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DB87BBD/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DE2B991/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5E016F8F/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5E023019/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5DB13571/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5FF017F6/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5FF0415B/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5FF04F7A/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5FF050B6/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5FF06A1B/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5FF06B57/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5FF06B5F/61BC7727" Ref="Q?"  Part="1" 
+AR Path="/5FF06B67/61BC7727" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9991 2396 50  0000 L CNN
+F 1 "BC847" H 9991 2305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10000 2275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 9800 2350 50  0001 L CNN
+	1    9800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61BC7731
+P 9900 2150
+AR Path="/5DA90748/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BC7731" Ref="#PWR?"  Part="1" 
+AR Path="/61BC7731" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9900 2000 50  0001 C CNN
+F 1 "+12V" H 9915 2323 50  0000 C CNN
+F 2 "" H 9900 2150 50  0001 C CNN
+F 3 "" H 9900 2150 50  0001 C CNN
+	1    9900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BC773B
+P 10900 2850
+AR Path="/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DA90748/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BC773B" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BC773B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10900 2600 50  0001 C CNN
+F 1 "GND" H 10905 2677 50  0000 C CNN
+F 2 "" H 10900 2850 50  0001 C CNN
+F 3 "" H 10900 2850 50  0001 C CNN
+	1    10900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61BC7745
+P 10900 2700
+AR Path="/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DA90748/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DAF110B/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DB16B82/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DB16B86/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB0/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB4/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB8/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DB3CABC/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DB87BB5/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DB87BB9/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DB87BBD/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DE2B991/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5E016F8F/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5E023019/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5DB13571/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5FF017F6/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5FF0415B/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5FF04F7A/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5FF050B6/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5FF06A1B/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5FF06B57/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5FF06B5F/61BC7745" Ref="R?"  Part="1" 
+AR Path="/5FF06B67/61BC7745" Ref="R?"  Part="1" 
+F 0 "R?" V 10693 2700 50  0000 C CNN
+F 1 "330" V 10784 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10830 2700 50  0001 C CNN
+F 3 "~" H 10900 2700 50  0001 C CNN
+	1    10900 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 61BC774F
+P 10800 2350
+AR Path="/5C756F9B/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5C763CB7/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5C7644B3/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5C7644B9/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5C188821/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5C192077/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5C19208D/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5C24C2D4/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5D78C3C7/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5D7C6377/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DA90748/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DAF110B/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DB16B82/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DB16B86/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB0/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB4/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB8/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DB3CABC/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB5/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB9/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DB87BBD/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DE2B991/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5E016F8F/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5E023019/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5DB13571/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5FF017F6/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5FF0415B/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5FF04F7A/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5FF050B6/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5FF06A1B/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5FF06B57/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5FF06B5F/61BC774F" Ref="Q?"  Part="1" 
+AR Path="/5FF06B67/61BC774F" Ref="Q?"  Part="1" 
+F 0 "Q?" H 10991 2396 50  0000 L CNN
+F 1 "BC847" H 10991 2305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11000 2275 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 10800 2350 50  0001 L CNN
+	1    10800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61BC7759
+P 10900 2150
+AR Path="/5DA90748/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BC7759" Ref="#PWR?"  Part="1" 
+AR Path="/61BC7759" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10900 2000 50  0001 C CNN
+F 1 "+12V" H 10915 2323 50  0000 C CNN
+F 2 "" H 10900 2150 50  0001 C CNN
+F 3 "" H 10900 2150 50  0001 C CNN
+	1    10900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BE00FC
+P 9900 4000
+AR Path="/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DA90748/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BE00FC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BE00FC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9900 3750 50  0001 C CNN
+F 1 "GND" H 9905 3827 50  0000 C CNN
+F 2 "" H 9900 4000 50  0001 C CNN
+F 3 "" H 9900 4000 50  0001 C CNN
+	1    9900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61BE0A48
+P 9900 3850
+AR Path="/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DA90748/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DAF110B/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DB16B82/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DB16B86/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DB3CABC/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DB87BB5/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DB87BB9/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DB87BBD/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DE2B991/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5E016F8F/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5E023019/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5DB13571/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5FF017F6/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5FF0415B/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5FF04F7A/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5FF050B6/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5FF06A1B/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5FF06B57/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5FF06B5F/61BE0A48" Ref="R?"  Part="1" 
+AR Path="/5FF06B67/61BE0A48" Ref="R?"  Part="1" 
+F 0 "R?" V 9693 3850 50  0000 C CNN
+F 1 "330" V 9784 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9830 3850 50  0001 C CNN
+F 3 "~" H 9900 3850 50  0001 C CNN
+	1    9900 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 61BE0A52
+P 9800 3500
+AR Path="/5C756F9B/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5C763CB7/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5C7644B3/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5C7644B9/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5C188821/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5C192077/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5C19208D/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5C24C2D4/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5D78C3C7/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5D7C6377/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DA90748/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DAF110B/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DB16B82/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DB16B86/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DB3CABC/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB5/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB9/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DB87BBD/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DE2B991/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5E016F8F/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5E023019/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5DB13571/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5FF017F6/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5FF0415B/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5FF04F7A/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5FF050B6/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5FF06A1B/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5FF06B57/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5FF06B5F/61BE0A52" Ref="Q?"  Part="1" 
+AR Path="/5FF06B67/61BE0A52" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9991 3546 50  0000 L CNN
+F 1 "BC847" H 9991 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10000 3425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 9800 3500 50  0001 L CNN
+	1    9800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61BE0A5C
+P 9900 3300
+AR Path="/5DA90748/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BE0A5C" Ref="#PWR?"  Part="1" 
+AR Path="/61BE0A5C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9900 3150 50  0001 C CNN
+F 1 "+12V" H 9915 3473 50  0000 C CNN
+F 2 "" H 9900 3300 50  0001 C CNN
+F 3 "" H 9900 3300 50  0001 C CNN
+	1    9900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BE0A66
+P 10900 4000
+AR Path="/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DA90748/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BE0A66" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BE0A66" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10900 3750 50  0001 C CNN
+F 1 "GND" H 10905 3827 50  0000 C CNN
+F 2 "" H 10900 4000 50  0001 C CNN
+F 3 "" H 10900 4000 50  0001 C CNN
+	1    10900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61BE0A70
+P 10900 3850
+AR Path="/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DA90748/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DAF110B/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DB16B82/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DB16B86/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DB3CABC/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DB87BB5/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DB87BB9/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DB87BBD/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DE2B991/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5E016F8F/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5E023019/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5DB13571/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5FF017F6/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5FF0415B/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5FF04F7A/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5FF050B6/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5FF06A1B/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5FF06B57/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5FF06B5F/61BE0A70" Ref="R?"  Part="1" 
+AR Path="/5FF06B67/61BE0A70" Ref="R?"  Part="1" 
+F 0 "R?" V 10693 3850 50  0000 C CNN
+F 1 "330" V 10784 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10830 3850 50  0001 C CNN
+F 3 "~" H 10900 3850 50  0001 C CNN
+	1    10900 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 61BE0A7A
+P 10800 3500
+AR Path="/5C756F9B/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5C763CB7/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5C7644B3/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5C7644B9/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5C188821/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5C192077/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5C19208D/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5C24C2D4/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5D78C3C7/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5D7C6377/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DA90748/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DAF110B/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DB16B82/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DB16B86/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DB3CABC/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB5/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB9/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DB87BBD/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DE2B991/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5E016F8F/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5E023019/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5DB13571/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5FF017F6/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5FF0415B/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5FF04F7A/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5FF050B6/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5FF06A1B/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5FF06B57/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5FF06B5F/61BE0A7A" Ref="Q?"  Part="1" 
+AR Path="/5FF06B67/61BE0A7A" Ref="Q?"  Part="1" 
+F 0 "Q?" H 10991 3546 50  0000 L CNN
+F 1 "BC847" H 10991 3455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11000 3425 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 10800 3500 50  0001 L CNN
+	1    10800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61BE0A84
+P 10900 3300
+AR Path="/5DA90748/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BE0A84" Ref="#PWR?"  Part="1" 
+AR Path="/61BE0A84" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10900 3150 50  0001 C CNN
+F 1 "+12V" H 10915 3473 50  0000 C CNN
+F 2 "" H 10900 3300 50  0001 C CNN
+F 3 "" H 10900 3300 50  0001 C CNN
+	1    10900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BE0A8E
+P 9900 5150
+AR Path="/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DA90748/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BE0A8E" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BE0A8E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9900 4900 50  0001 C CNN
+F 1 "GND" H 9905 4977 50  0000 C CNN
+F 2 "" H 9900 5150 50  0001 C CNN
+F 3 "" H 9900 5150 50  0001 C CNN
+	1    9900 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61BE0A98
+P 9900 5000
+AR Path="/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DA90748/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DAF110B/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DB16B82/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DB16B86/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DB3CABC/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DB87BB5/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DB87BB9/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DB87BBD/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DE2B991/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5E016F8F/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5E023019/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5DB13571/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5FF017F6/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5FF0415B/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5FF04F7A/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5FF050B6/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5FF06A1B/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5FF06B57/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5FF06B5F/61BE0A98" Ref="R?"  Part="1" 
+AR Path="/5FF06B67/61BE0A98" Ref="R?"  Part="1" 
+F 0 "R?" V 9693 5000 50  0000 C CNN
+F 1 "330" V 9784 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9830 5000 50  0001 C CNN
+F 3 "~" H 9900 5000 50  0001 C CNN
+	1    9900 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 61BE0AA2
+P 9800 4650
+AR Path="/5C756F9B/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5C763CB7/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5C7644B3/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5C7644B9/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5C188821/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5C192077/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5C19208D/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5C24C2D4/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5D78C3C7/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5D7C6377/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DA90748/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DAF110B/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DB16B82/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DB16B86/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DB3CABC/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB5/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB9/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DB87BBD/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DE2B991/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5E016F8F/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5E023019/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5DB13571/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5FF017F6/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5FF0415B/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5FF04F7A/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5FF050B6/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5FF06A1B/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5FF06B57/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5FF06B5F/61BE0AA2" Ref="Q?"  Part="1" 
+AR Path="/5FF06B67/61BE0AA2" Ref="Q?"  Part="1" 
+F 0 "Q?" H 9991 4696 50  0000 L CNN
+F 1 "BC847" H 9991 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10000 4575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 9800 4650 50  0001 L CNN
+	1    9800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61BE0AAC
+P 9900 4450
+AR Path="/5DA90748/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BE0AAC" Ref="#PWR?"  Part="1" 
+AR Path="/61BE0AAC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9900 4300 50  0001 C CNN
+F 1 "+12V" H 9915 4623 50  0000 C CNN
+F 2 "" H 9900 4450 50  0001 C CNN
+F 3 "" H 9900 4450 50  0001 C CNN
+	1    9900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BE0AB6
+P 10900 5150
+AR Path="/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DA90748/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BE0AB6" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BE0AB6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10900 4900 50  0001 C CNN
+F 1 "GND" H 10905 4977 50  0000 C CNN
+F 2 "" H 10900 5150 50  0001 C CNN
+F 3 "" H 10900 5150 50  0001 C CNN
+	1    10900 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61BE0AC0
+P 10900 5000
+AR Path="/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DA90748/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DAF110B/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DB16B82/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DB16B86/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DB3CABC/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DB87BB5/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DB87BB9/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DB87BBD/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DE2B991/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5E016F8F/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5E023019/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5DB13571/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5FF017F6/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5FF0415B/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5FF04F7A/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5FF050B6/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5FF06A1B/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5FF06B57/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5FF06B5F/61BE0AC0" Ref="R?"  Part="1" 
+AR Path="/5FF06B67/61BE0AC0" Ref="R?"  Part="1" 
+F 0 "R?" V 10693 5000 50  0000 C CNN
+F 1 "330" V 10784 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10830 5000 50  0001 C CNN
+F 3 "~" H 10900 5000 50  0001 C CNN
+	1    10900 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC847 Q?
+U 1 1 61BE0ACA
+P 10800 4650
+AR Path="/5C756F9B/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5C763CB7/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5C7644B3/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5C7644B9/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5C188821/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5C192077/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5C19208D/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5C24C2D4/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5D78C3C7/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5D7C6377/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DA90748/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DAF110B/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DB16B82/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DB16B86/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DB3CABC/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB5/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DB87BB9/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DB87BBD/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DE2B991/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5E016F8F/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5E023019/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5DB13571/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5FF017F6/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5FF0415B/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5FF04F7A/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5FF050B6/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5FF06A1B/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5FF06B57/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5FF06B5F/61BE0ACA" Ref="Q?"  Part="1" 
+AR Path="/5FF06B67/61BE0ACA" Ref="Q?"  Part="1" 
+F 0 "Q?" H 10991 4696 50  0000 L CNN
+F 1 "BC847" H 10991 4605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11000 4575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 10800 4650 50  0001 L CNN
+	1    10800 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61BE0AD4
+P 10900 4450
+AR Path="/5DA90748/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DAF110B/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B82/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DB16B86/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB0/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB4/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CAB8/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DB3CABC/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB5/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BB9/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DB87BBD/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DA90748/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DAF110B/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B82/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB16B86/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB0/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB4/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CAB8/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB3CABC/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB5/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BB9/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DD41DD6/5DB87BBD/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DE2B991/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5E016F8F/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5E023019/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5DB13571/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF017F6/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF0415B/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF04F7A/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF050B6/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06A1B/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B57/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B5F/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/5FF06B67/61BE0AD4" Ref="#PWR?"  Part="1" 
+AR Path="/61BE0AD4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10900 4300 50  0001 C CNN
+F 1 "+12V" H 10915 4623 50  0000 C CNN
+F 2 "" H 10900 4450 50  0001 C CNN
+F 3 "" H 10900 4450 50  0001 C CNN
+	1    10900 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5150 2000 1    50   Input ~ 0
+LED1
+Text GLabel 5650 2800 2    50   Input ~ 0
+LED2
+Text GLabel 5650 3000 2    50   Input ~ 0
+LED3
+Text GLabel 5650 3200 2    50   Input ~ 0
+LED4
+Text GLabel 5650 3400 2    50   Input ~ 0
+LED5
+Text GLabel 5250 3900 3    50   Input ~ 0
+LED6
+Text GLabel 5050 3900 3    50   Input ~ 0
+LED7
+Text GLabel 4850 3900 3    50   Input ~ 0
+LED8
+Text GLabel 5250 2000 1    50   Input ~ 0
+TRG1
+Text GLabel 5650 2900 2    50   Input ~ 0
+TRG2
+Text GLabel 5650 3100 2    50   Input ~ 0
+TRG3
+Text GLabel 5650 3300 2    50   Input ~ 0
+TRG4
+Text GLabel 5650 3500 2    50   Input ~ 0
+TRG5
+Text GLabel 5150 3900 3    50   Input ~ 0
+TRG6
+Text GLabel 4950 3900 3    50   Input ~ 0
+TRG7
+Text GLabel 4750 3900 3    50   Input ~ 0
+TRG8
+Text GLabel 12050 5950 0    50   Input ~ 0
+TRG1
+Text GLabel 12050 6050 0    50   Input ~ 0
+TRG2
+Text GLabel 12050 6150 0    50   Input ~ 0
+TRG3
+Text GLabel 12050 6250 0    50   Input ~ 0
+TRG4
+Text GLabel 12050 6350 0    50   Input ~ 0
+TRG5
+Text GLabel 12050 6450 0    50   Input ~ 0
+TRG6
+Text GLabel 12050 6550 0    50   Input ~ 0
+TRG7
+Text GLabel 12050 6650 0    50   Input ~ 0
+TRG8
+Text GLabel 7600 8200 0    50   Input ~ 0
+TIM3_CH1
+Text GLabel 7600 8400 0    50   Input ~ 0
+TIM3_CH2
+$Comp
+L STM32G071CBTx:STM32G071CBTx U?
+U 1 1 61D082BD
+P 4700 2950
+F 0 "U?" H 5694 2996 50  0000 L CNN
+F 1 "STM32G071CBTx" H 5694 2905 50  0000 L CNN
+F 2 "LQFP48" H 4700 3150 50  0001 C CNN
+F 3 "" H 4700 3250 50  0001 C CNN
+	1    4700 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 3900 3    50   Input ~ 0
+DAC1_CH1
+Text GLabel 4450 3900 3    50   Input ~ 0
+DAC1_CH2
+Text GLabel 4550 3900 3    50   Input ~ 0
+TIM3_CH1
+Text GLabel 4650 3900 3    50   Input ~ 0
+TIM3_CH2
+Text GLabel 4250 3900 3    50   Input ~ 0
+ENC_SW
+Text GLabel 4750 2000 1    50   Input ~ 0
+SPI1_SCK
+Text GLabel 4650 2000 1    50   Input ~ 0
+SPI1_MISO
+Text GLabel 4550 2000 1    50   Input ~ 0
+SPI1_MOSI
+Text GLabel 4250 2000 1    50   Input ~ 0
+SPI2_SCK
+Text GLabel 4350 2000 1    50   Input ~ 0
+SPI2_MOSI
+Text GLabel 4450 2000 1    50   Input ~ 0
+SPI2_MISO
+Text GLabel 4150 2000 1    50   Input ~ 0
+USART3_RX
+Text GLabel 5650 2500 2    50   Input ~ 0
+SWDIO
+Text GLabel 5650 2400 2    50   Input ~ 0
+SWCLK
+Text GLabel 3750 2500 0    50   Input ~ 0
+TFT_DC
+Text GLabel 3750 2400 0    50   Input ~ 0
+TFT_RES
+Text GLabel 12400 8450 2    50   Input ~ 0
+USART3_RX
+Text GLabel 5650 2600 2    50   Input ~ 0
+I2C2_SDA
+Text GLabel 5650 2700 2    50   Input ~ 0
+I2C2_SCL
 $EndSCHEMATC

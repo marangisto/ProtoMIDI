@@ -2,4 +2,6 @@
   (lib (name Local)(type Legacy)(uri ${KIPRJMOD}/Local.lib)(options "")(descr ""))
   (lib (name STM32G431)(type Legacy)(uri C:/Users/marten/Projects/Waves/STM32G431.lib)(options "")(descr ""))
   (lib (name STM32G071RBTx)(type Legacy)(uri ${KIPRJMOD}/STM32G071RBTx.lib)(options "")(descr ""))
+  (lib (name STM32G071KBTx)(type Legacy)(uri ${KIPRJMOD}/STM32G071KBTx.lib)(options "")(descr ""))
+  (lib (name STM32G071CBTx)(type Legacy)(uri ${KIPRJMOD}/STM32G071CBTx.lib)(options "")(descr ""))
 )
